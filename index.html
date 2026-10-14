@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>InstaVibe | Social Experience</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="text-white">
+
+  <!-- Background decoration -->
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <a href="#" class="logo">
+      <span class="logo-icon">◎</span>
+      <span>Insta<span class="gradient-text">Vibe</span></span>
+    </a>
+
+    <nav class="nav-menu">
+      <a href="#" class="nav-link active">
+        <span class="nav-icon">⌂</span> <span>Home</span>
+      </a>
+      <a href="#search" class="nav-link" id="searchLink">
+        <span class="nav-icon">⌕</span> <span>Search</span>
+      </a>
+      <a href="#explore" class="nav-link">
+        <span class="nav-icon">▦</span> <span>Explore</span>
+      </a>
+      <a href="#reels" class="nav-link">
+        <span class="nav-icon">▷</span> <span>Reels</span>
+      </a>
+      <a href="#messages" class="nav-link">
+        <span class="nav-icon">➤</span> <span>Messages</span>
+      </a>
+      <a href="#notifications" class="nav-link" id="notificationsLink">
+        <span class="nav-icon">♡</span> <span>Notifications</span>
+      </a>
+      <a href="#create" class="nav-link" id="createLink">
+        <span class="nav-icon">⊞</span> <span>Create</span>
+      </a>
+      <a href="#profile" class="nav-link">
+        <img
+          class="nav-avatar"
+          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop"
+          alt="Your profile"
+        >
+        <span>Profile</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <a href="#more" class="nav-link">
+        <span class="nav-icon">☰</span> <span>More</span>
+      </a>
+      <p class="sidebar-caption">MADE FOR YOUR MOMENTS ✦</p>
+    </div>
+  </aside>
+
+  <!-- Main content -->
+  <main class="main-content">
+
+    <!-- Top bar -->
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">YOUR DAILY DOSE OF INSPIRATION</p>
+        <h1>Good vibes, <span class="gradient-text">great stories.</span></h1>
+      </div>
+
+      <div class="top-actions">
+        <button class="icon-button" id="themeToggle"
+          aria-label="Toggle theme" title="Toggle theme">☼</button>
+        <button class="create-button" id="topCreate">＋ Create post</button>
+      </div>
+    </header>
+
+    <!-- Stories -->
+    <section class="stories-section" id="stories">
+      <div class="section-heading">
+        <div>
+          <h2>Your circle</h2>
+          <p>Little moments, big memories.</p>
+        </div>
+        <button class="text-button" id="viewStories">View all ↗</button>
+      </div>
+
+      <div class="stories-list">
+        <button class="story-item" data-story="Your story">
+          <span class="story-ring add-story">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&h=120&fit=crop" alt="Your profile">
+            <span class="add-badge">+</span>
+          </span>
+          <span>Your story</span>
+        </button>
+
+        <button class="story-item" data-story="Sophia">
+          <span class="story-ring">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=120&h=120&fit=crop" alt="Sophia">
+          </span>
+          <span>Sophia</span>
+        </button>
+
+        <button class="story-item" data-story="Alex">
+          <span class="story-ring">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&h=120&fit=crop" alt="Alex">
+          </span>
+          <span>Alex</span>
+        </button>
+
+        <button class="story-item" data-story="Mia">
+          <span class="story-ring">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=120&h=120&fit=crop" alt="Mia">
+          </span>
+          <span>Mia</span>
+        </button>
+
+        <button class="story-item" data-story="Ryan">
+          <span class="story-ring">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=120&h=120&fit=crop" alt="Ryan">
+          </span>
+          <span>Ryan</span>
+        </button>
+
+        <button class="story-item" data-story="Olivia">
+          <span class="story-ring">
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=120&h=120&fit=crop" alt="Olivia">
+          </span>
+          <span>Olivia</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Feed and right panel -->
+    <div class="content-grid">
+
+      <section class="feed-section" id="explore">
+        <div class="feed-heading">
+          <div>
+            <h2>Discover your feed</h2>
+            <p>Fresh moments from your people.</p>
+          </div>
+          <span class="live-indicator">● LIVE FEED</span>
+        </div>
+
+        <!-- Post 1 -->
+        <article class="post-card">
+          <div class="post-header">
+            <img class="post-avatar"
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop"
+              alt="Alex profile">
+
+            <div class="post-user">
+              <strong>alex.morgan</strong>
+              <span>12 minutes ago · Goa, India</span>
+            </div>
+
+            <button class="more-button" aria-label="More options">•••</button>
+          </div>
+
+          <div class="post-image-wrap">
+            <img class="post-image"
+              src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=900&auto=format&fit=crop"
+              alt="Tropical coastline and turquoise water">
+
+            <span class="image-label">ESCAPE THE ORDINARY ✦</span>
+            <span class="like-overlay">♥</span>
+          </div>
+
+          <div class="post-actions">
+            <div class="action-group">
+              <button class="action-button like-button"
+                aria-label="Like post" aria-pressed="false">♡</button>
+              <button class="action-button comment-button"
+                aria-label="Comment on post">◯</button>
+              <button class="action-button share-button"
+                aria-label="Share post">➤</button>
+            </div>
+            <button class="action-button save-button"
+              aria-label="Save post" aria-pressed="false">♧</button>
+          </div>
+
+          <div class="post-details">
+            <p class="likes-count"><strong><span class="like-count">2,481</span> likes</strong></p>
+            <p class="caption"><strong>alex.morgan</strong> Somewhere between the
+              ocean and my thoughts. 🌊 <span class="hashtag">#travel #goodvibes</span>
+            </p>
+            <button class="comments-link">View all 128 comments</button>
+            <form class="comment-form">
+              <input type="text" placeholder="Add a comment..." aria-label="Add a comment">
+              <button type="submit">Post</button>
+            </form>
+          </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="post-card">
+          <div class="post-header">
+            <img class="post-avatar"
+              src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=100&h=100&fit=crop"
+              alt="Sophia profile">
+
+            <div class="post-user">
+              <strong>sophia.creates</strong>
+              <span>1 hour ago · The little café</span>
+            </div>
+
+            <button class="more-button" aria-label="More options">•••</button>
+          </div>
+
+          <div class="post-image-wrap">
+            <img class="post-image"
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=900&auto=format&fit=crop"
+              alt="Coffee on a cafe table">
+
+            <span class="image-label">SLOW MORNINGS ☕</span>
+            <span class="like-overlay">♥</span>
+          </div>
+
+          <div class="post-actions">
+            <div class="action-group">
+              <button class="action-button like-button"
+                aria-label="Like post" aria-pressed="false">♡</button>
+              <button class="action-button comment-button"
+                aria-label="Comment on post">◯</button>
+              <button class="action-button share-button"
+                aria-label="Share post">➤</button>
+            </div>
+            <button class="action-button save-button"
+              aria-label="Save post" aria-pressed="false">♧</button>
+          </div>
+
+          <div class="post-details">
+            <p class="likes-count"><strong><span class="like-count">946</span> likes</strong></p>
+            <p class="caption"><strong>sophia.creates</strong> Coffee, sunshine,
+              and a little peace of mind. ☕✨
+              <span class="hashtag">#coffeetime #aesthetic</span>
+            </p>
+            <button class="comments-link">View all 42 comments</button>
+            <form class="comment-form">
+              <input type="text" placeholder="Add a comment..." aria-label="Add a comment">
+              <button type="submit">Post</button>
+            </form>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- Right sidebar -->
+      <aside class="right-panel">
+        <div class="profile-mini">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&h=120&fit=crop" alt="Your profile">
+          <div>
+            <strong>your.vibe</strong>
+            <span>Your little corner of the internet.</span>
+          </div>
+          <button class="text-button">Switch</button>
+        </div>
+
+        <div class="suggestion-heading">
+          <h3>People you may like</h3>
+          <button class="text-button" id="seeAll">See all</button>
+        </div>
+
+        <div class="suggestion">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&h=100&fit=crop" alt="Mia">
+          <div class="suggestion-info">
+            <strong>mia.journals</strong>
+            <span>Suggested for you</span>
+          </div>
+          <button class="follow-button">Follow</button>
+        </div>
+
+        <div class="suggestion">
+          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop" alt="Ryan">
+          <div class="suggestion-info">
+            <strong>ryan.visuals</strong>
+            <span>Followed by alex</span>
+          </div>
+          <button class="follow-button">Follow</button>
+        </div>
+
+        <div class="suggestion">
+          <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=100&h=100&fit=crop" alt="Olivia">
+          <div class="suggestion-info">
+            <strong>olivia.frames</strong>
+            <span>New to InstaVibe</span>
+          </div>
+          <button class="follow-button">Follow</button>
+        </div>
+
+        <div class="inspiration-card">
+          <span class="sparkle">✦</span>
+          <p class="eyebrow">A LITTLE REMINDER</p>
+          <h3>Your life is your own kind of art.</h3>
+          <p>Make today a moment worth keeping.</p>
+        </div>
+
+        <footer class="footer-links">
+          About · Help · Privacy · Terms
+          <br><br>
+          © 2026 INSTAVIBE
+        </footer>
+      </aside>
+
+    </div>
+
+    <footer class="mobile-footer">
+      <a href="#" aria-label="Home">⌂</a>
+      <a href="#explore" aria-label="Explore">▦</a>
+      <a href="#messages" aria-label="Messages">➤</a>
+      <a href="#notifications" aria-label="Notifications">♡</a>
+      <a href="#profile" aria-label="Profile">◉</a>
+    </footer>
+
+  </main>
+
+  <!-- Modal for stories, creating posts and notifications -->
+  <div class="modal-backdrop" id="modal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeModal" aria-label="Close">×</button>
+      <h2 id="modalTitle">InstaVibe</h2>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
